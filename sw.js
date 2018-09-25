@@ -5,6 +5,7 @@
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
 	'/pwa/',
+	'/pwa/index.html',
 	'/pwa/css/style.css',
 	'/pwa/drawer.js'
 ];
@@ -22,6 +23,8 @@ self.addEventListener('install', function(event) {
 
 // リソースフェッチ時のキャッシュロード処理
 self.addEventListener('fetch', function(event) {
+  var c = document.getElementById('console')
+  c.innerHTML = 'fetch - ' + event.request.url
   console.log('fetch - ' + event.request.url)
 	event.respondWith(
 		caches
