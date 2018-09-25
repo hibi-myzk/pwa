@@ -1,6 +1,6 @@
 {
-	"short_name": "PWAサンプル",
-	"name": "PWAサンプルアプリ",
+	"short_name": "PWA by hibi",
+	"name": "PWAサンプルアプリ by hibi",
 	"display": "standalone",
 	"start_url": "index.html",
 	"icons": [

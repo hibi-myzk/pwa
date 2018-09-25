@@ -3,6 +3,8 @@
  * 画面タッチでカラフルな線を描く
  * ------------------------------
  */
+window.addEventListener('load', function() {
+
 var drawing = false
 var last_x = null
 var last_y = null
@@ -53,3 +55,5 @@ canvas.addEventListener('touchend', drawFinish, false)
 function drawFinish() {
 	drawing = false
 }
+
+})

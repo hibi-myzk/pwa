@@ -6,9 +6,6 @@
 <link rel="manifest" href="manifest.json">
 <title>PWA Sample</title>
 <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<canvas id="stage"></canvas>
 <script src="drawer.js"></script>
 <script>
 // ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
@@ -20,5 +17,8 @@ if ('serviceWorker' in navigator) {
 	});
 }
 </script>
+</head>
+<body>
+<canvas id="stage"></canvas>
 </body>
 </html>
