@@ -11,6 +11,7 @@ var last_y = null
 var canvas = document.getElementById('stage')
 var ctx = canvas.getContext('2d')
 function resize() {
+  console.log('resize')
 	canvas.setAttribute('width', window.innerWidth*2)
 	canvas.setAttribute('height', window.innerHeight*2)
 	ctx.font = '30px serif'
