@@ -26,7 +26,7 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
   console.log('fetch - ' + event.request.url)
 
-  if (!navigator.onLine) {
+  if (url.origin == location.origin && url.pathname == '/pwa/' && !navigator.onLine) {
     return event.respondWith(caches.match('/pwa/offline.html'));
   }
 
